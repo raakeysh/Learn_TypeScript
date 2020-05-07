@@ -1,0 +1,19 @@
+{
+  "name": "lesson1",
+  "version": "0.0.0",
+  "description": "Lesson1",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.14",
+    "typescript": "^3.2.2"
+  },
+  "license": "UNLICENSED",
+  "repository": "https://github.com/raakeysh/Learn_TypeScript.git"
+}
