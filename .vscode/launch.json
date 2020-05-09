@@ -7,13 +7,40 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "Variable Scope Program",
+            "program": "${workspaceFolder}/variableScope.js",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Functions Program",
+            "program": "${workspaceFolder}/MyPrograms/tsFunctions.js",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Loops Program",
+            "program": "${workspaceFolder}/loops.js",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Main Program",
             "skipFiles": [
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}\\main.js",
             "outFiles": [
-                "${workspaceFolder}/**/*.js"
+                "${workspaceFolder}/Learn_Typescript/**/*.js"
             ]
         }
     ]
