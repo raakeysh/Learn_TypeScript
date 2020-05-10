@@ -31,10 +31,7 @@ class Person{
             }
             default:
                 break;
-        }
-        
-        
-
+        }            
         console.log("Operation result is "+opResult)
     }
 }
