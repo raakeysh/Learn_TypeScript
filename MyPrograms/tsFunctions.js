@@ -1,5 +1,6 @@
 var Person = /** @class */ (function () {
     function Person() {
+        this.rMessage = null;
     }
     //TypeScript function with optional parameter
     Person.prototype.displayDetails = function (firstName, lastName, email) {
@@ -18,6 +19,7 @@ var Person = /** @class */ (function () {
         for (var _i = 1; _i < arguments.length; _i++) {
             num[_i - 1] = arguments[_i];
         }
+        this.rMessage = operation;
         var opResult = null;
         switch (operation.toLowerCase()) {
             case "add":
@@ -38,6 +40,23 @@ var Person = /** @class */ (function () {
                 break;
         }
         console.log("Operation result is " + opResult);
+        //TypeScript Anonymous function
+        var message = function (rMessage) {
+            return rMessage.toUpperCase();
+        };
+        console.log(message(this.rMessage));
+        //TypeScript function constructor
+        var myFunction = new Function("op1", "op2", "return op1 * op2");
+        console.log(myFunction(2, 3));
+        //Lamda statement
+        var foo = function (x) {
+            if (typeof x == "number")
+                console.log("x is number");
+            if (typeof x == "string")
+                console.log("x is string");
+        };
+        foo(100);
+        foo("Tom");
     };
     return Person;
 }());
