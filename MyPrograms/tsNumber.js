@@ -2,9 +2,6 @@ var TSNumbers = /** @class */ (function () {
     function TSNumbers() {
     }
     TSNumbers.prototype.numDemo = function () {
-        var message = function (rMessage) {
-            return rMessage.toUpperCase();
-        };
         var display = function () {
             console.log("TypeScript Number Properties: ");
             console.log("Maximum value that a number variable can hold: " + Number.MAX_VALUE);
@@ -13,6 +10,13 @@ var TSNumbers = /** @class */ (function () {
             console.log("Value of Negative Infinity:" + Number.POSITIVE_INFINITY);
         };
         display();
+        function employee(id, name) {
+            this.id = id;
+            this.name = name;
+        }
+        var emp = new employee(123, "Smith");
+        employee.prototype.email = "smith@abc.com";
+        console.log(emp.email);
     };
     return TSNumbers;
 }());
