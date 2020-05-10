@@ -1,0 +1,20 @@
+var TSNumbers = /** @class */ (function () {
+    function TSNumbers() {
+    }
+    TSNumbers.prototype.numDemo = function () {
+        var message = function (rMessage) {
+            return rMessage.toUpperCase();
+        };
+        var display = function () {
+            console.log("TypeScript Number Properties: ");
+            console.log("Maximum value that a number variable can hold: " + Number.MAX_VALUE);
+            console.log("The least value that a number variable can hold: " + Number.MIN_VALUE);
+            console.log("Value of Negative Infinity: " + Number.NEGATIVE_INFINITY);
+            console.log("Value of Negative Infinity:" + Number.POSITIVE_INFINITY);
+        };
+        display();
+    };
+    return TSNumbers;
+}());
+var tSNumbers = new TSNumbers();
+tSNumbers.numDemo();
