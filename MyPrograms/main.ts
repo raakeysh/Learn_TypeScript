@@ -6,10 +6,10 @@ class Greeting{
         var name: string = "Rakesh";
         var level: number;
         var eligible = true;
-        var secret = "Expert";        
+        var secret = "Easy";        
         level = <number> <any> secret
 
-        console.log("my name is " +name, "and I am " +level)
+        console.log("my name is " +name, "and I am on " +level +" level")
         
     }
 }

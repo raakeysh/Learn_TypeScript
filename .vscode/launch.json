@@ -34,14 +34,14 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Main Program",
+            "name": "Main Program",            
+            "program": "${workspaceFolder}/MyPrograms/main.ts", 
             "skipFiles": [
                 "<node_internals>/**"
-            ],
-            "program": "${workspaceFolder}\\main.js",
-            "outFiles": [
-                "${workspaceFolder}/Learn_Typescript/**/*.js"
-            ]
+            ],      
+            "preLaunchTask": "tsc: build - tsconfig.json",     
+            "outFiles": ["${workspaceFolder}/**/*.js"],
+            "console": "integratedTerminal"
         }
     ]
 }
