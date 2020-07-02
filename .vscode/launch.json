@@ -7,7 +7,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Variable Scope Program",
+            "name": "Variable Scope Test",
             "program": "${workspaceFolder}/variableScope.js",
             "skipFiles": [
                 "<node_internals>/**"

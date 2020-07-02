@@ -13,8 +13,12 @@
   },
   "devDependencies": {
     "@types/node": "^8.0.14",
+    "jasmine": "^3.5.0",
     "typescript": "^3.2.2"
   },
   "license": "UNLICENSED",
-  "repository": "https://github.com/raakeysh/Learn_TypeScript.git"
+  "repository": "https://github.com/raakeysh/Learn_TypeScript.git",
+  "dependencies": {
+    "@types/jasmine": "^3.5.10"
+  }
 }
